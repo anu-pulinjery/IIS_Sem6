@@ -83,7 +83,7 @@ class blockChain:
             for i in range (self.block_limit):
                 a.append([])
             j=0
-            for i in range(4):
+            for i in range(self.block_limit):
                 while j in range(len(txns)):
                     sender, receiver, amount, incentive = txns[j]
                     if sender in self.accnts and self.accnts[sender] >= amount and receiver in self.accnts:
